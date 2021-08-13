@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS only -->
+	<link href="css/bootstrap.css" rel="stylesheet" >
+  <style>
+    .navbar
+    {
+      background:#000000a6;
+    }
+    .banner
+    {
+      background: url('https://app.firstfiddle.in/images/brand-banner/lotd.jpeg');
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 800px;
+    }
+    .navbar-nav li a
+    {
+      color:#fff !important;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .navbar-nav li 
+    {
+      padding: 0 10px;
+    }
+    .mob-logo
+    {
+      width:59px;
+      display: none;
+    }
+    @media(max-width: 600px)
+    {
+      .mob-logo
+      {
+        display: block;
+      }
+      .web-logo
+      {
+        display: none;
+      }
+      .navbar
+      {
+        background:#7492e6;
+      }
+    }
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-light fixed-top">
+  <div class="container-fluid">
+    <a href="" class="navbar-brand">
+      <img src="https://www.firstfiddle.in/assets/images/ff-logo-02.png" style="width: 60px;" class="web-logo">
+      
+    </a>
+    <a href="">
+      <img src="https://www.npantari.in/images/header/30112019040958a.png" style="width: 60px;" class="mob-logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pn">
+
+      <span class="navbar-toggler-icon"></span>
+     <!-- <i class="fa fa-bars"></i> -->
+
+    </button> 
+   <div class="collapse navbar-collapse" id="pn">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+    <li><a class="nav-link" href="">Home</a></li>
+    <li><a class="nav-link" href="">Home</a></li>
+    <li><a class="nav-link" href="">Home</a></li>
+    <li><a class="nav-link" href="">Home</a></li>
+    <li><a class="nav-link" href="">Home</a></li>
+     <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item " href="#">Action</a></li>
+            <li><a class="dropdown-item " href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+  </ul>
+
+  </div><!--container-fluid end--->
+</nav>
+<div class="banner">
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
